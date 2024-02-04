@@ -11,6 +11,7 @@ This repository contains examples of how to use Jest for testing Typescript Reac
 
 ## Todo
 
+- Autentication - Manual Mocks
 - React Mock Service Worker(MSW)
 - Simple Mocking process.env
 - Async Testing
