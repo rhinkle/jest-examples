@@ -5,7 +5,9 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "test:watch": "nx test --watch",
+    "test:coverage": "nx test --code-coverage"
   },
   "private": true,
   "dependencies": {

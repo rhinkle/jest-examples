@@ -5,18 +5,22 @@ import axios from 'axios';
 // To tests this service you would want to look into contract testing or pact testing.
 
 // These functions are not tested directly, but is tested indirectly by the components that use it.
-function getTodos(id: number) {
-  return axios
-    .get(`/todos/${id}`)
-    .then((response) => response.data)
-    .catch((error) => error);
+async function getTodos(id: number) {
+  try {
+    const response = await axios.get(`/todos/${id}`);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
 }
 
-function createTodo(todo: any) {
-  return axios
-    .post('/todos', todo)
-    .then((response) => response.data)
-    .catch((error) => error);
+async function createTodo(todo: any) {
+  try {
+    const response = await axios.post('/todos', todo);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
 }
 
 export { getTodos, createTodo };
