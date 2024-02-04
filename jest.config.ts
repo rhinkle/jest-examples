@@ -9,6 +9,7 @@ export default {
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: './coverage/jest-examples',
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  coverageReporters: ['lcov', 'text', 'html'],
   testMatch: [
     '<rootDir>/src/**/__tests__/**/*.[jt]s?(x)',
     '<rootDir>/src/**/*(*.)@(spec|test).[jt]s?(x)',

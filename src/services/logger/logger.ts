@@ -10,5 +10,4 @@ function log(message: string, data: any) {
 function warn(message: string, data: any) {
   console.warn(message, data);
 }
-
 export default { log, warn };
