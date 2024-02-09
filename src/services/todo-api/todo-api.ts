@@ -14,13 +14,4 @@ async function getTodos(id: number) {
   }
 }
 
-async function createTodo(todo: any) {
-  try {
-    const response = await axios.post('/todos', todo);
-    return response.data;
-  } catch (error) {
-    return error;
-  }
-}
-
-export { getTodos, createTodo };
+export { getTodos };

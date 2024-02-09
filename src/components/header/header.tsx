@@ -1,6 +1,3 @@
-import { useMemo } from 'react';
-import styles from './header.module.css';
-
 /* eslint-disable-next-line */
 export interface HeaderProps {}
 
@@ -27,10 +24,10 @@ export function Header(props: HeaderProps) {
   return (
     <div className="drop-shadow-md bg-slate-600">
       <div className="container mx-auto flex flex-auto ">
-        <div className="pr-6 py-3">
+        <div className="pr-6 py-3 flex-1">
           <span className="text-white">Jest Testing Examples</span>
         </div>
-        <nav className="">
+        <nav className="mr-right">
           <ul className="flex flex-auto flex-row">{navItem()}</ul>
         </nav>
       </div>
