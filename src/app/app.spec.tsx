@@ -11,6 +11,6 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
-    expect(getByText(/Welcome jest-examples/gi)).toBeTruthy();
+    expect(getByText('Jest Testing Examples')).toBeTruthy();
   });
 });
