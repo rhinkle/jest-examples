@@ -13,7 +13,7 @@ export function Header(props: HeaderProps) {
       return (
         <li
           key={item.name}
-          className=" py-3 px-2 text-white hover:bg-slate-300 hover:text-slate-900"
+          className=" px-2 py-3 text-white hover:bg-slate-300 hover:text-slate-900"
         >
           <a href={`#${item.link}`}>{item.name}</a>
         </li>
@@ -22,9 +22,9 @@ export function Header(props: HeaderProps) {
   };
 
   return (
-    <div className="drop-shadow-md bg-slate-600">
+    <div className="bg-slate-600 drop-shadow-md">
       <div className="container mx-auto flex flex-auto ">
-        <div className="pr-6 py-3 flex-1">
+        <div className="flex-1 py-3 pr-6">
           <span className="text-white">Jest Testing Examples</span>
         </div>
         <nav className="mr-right">
