@@ -1,32 +1,25 @@
-import { useState } from 'react';
-import TodoList from 'src/components/todo-list/todo-list';
+import { useEffect, useState } from 'react';
+import TodoList, { Todo } from 'src/components/todo-list/todo-list';
+import { getFakeTodos } from 'src/services/todo-api/todo-api';
 
 export function TodoSection() {
-  const defaultTodos = [
-    {
-      title: 'Todo 1',
-      description: 'Description 1',
-      completed: false,
-      id: '1',
-    },
-    {
-      title: 'Todo 2',
-      description: 'Description 2',
-      completed: false,
-      id: '2',
-    },
-    {
-      title: 'Todo 3',
-      description: 'Description 3',
-      completed: false,
-      id: '3',
-    },
-  ];
+  const [todos, setTodos] = useState<Todo[] | never[]>([]);
 
-  const [todos, setTodos] = useState(defaultTodos);
+  useEffect(() => {
+    getFakeTodos().then((resp) => {
+      if (resp.length > 0) {
+        setTodos(resp);
+      }
+    });
+  }, []);
 
   const handleTodoClick = (id: string) => {
     console.log('Todo clicked', id);
+
+    if (todos && todos.length <= 0) {
+      return;
+    }
+
     const updatedTodos = todos.map((todo) => {
       if (todo.id === id) {
         todo.completed = !todo.completed;
