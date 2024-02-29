@@ -2,13 +2,13 @@
 import React from 'react';
 import './app.module.css';
 import Header from 'src/components/header/header';
-import { TodoSection } from './fragments/todo';
+import TodoSection from './fragments/todo';
 
 export function App() {
   return (
     <div>
       <Header />
-      <div className="container mx-auto mt-4 border-2 border-solid border-gray-700 rounded-md">
+      <div className="container mx-auto mt-4 rounded-md border-2 border-solid border-gray-700">
         <TodoSection />
       </div>
     </div>

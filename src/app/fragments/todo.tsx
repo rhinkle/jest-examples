@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import TodoList, { Todo } from 'src/components/todo-list/todo-list';
 import { getFakeTodos } from 'src/services/todo-api/todo-api';
 
-export function TodoSection() {
+export default function TodoSection() {
   const [todos, setTodos] = useState<Todo[] | never[]>([]);
 
   useEffect(() => {
