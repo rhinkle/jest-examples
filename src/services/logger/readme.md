@@ -1,8 +1,6 @@
 # Mocking Logging with jest
 
-## TLDR;
-
-Dont spend too much time testing your logger, do enough to get the "confidence" you need and to support your others tests. jest.spyOn() is a good enough "solve" for validating logs in other tests.
+**TLDR;** Dont spend too much time testing your logger, do enough to get the "confidence" you need and to support your others tests. jest.spyOn() is a good enough "solve" for validating logs in other tests.
 
 ```typescript
 const log = jest.spyOn(console, 'log').mockImplementation(() => {
