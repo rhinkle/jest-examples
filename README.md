@@ -8,7 +8,7 @@ This repository contains examples of how to use Jest for testing Typescript Reac
 
 - [Math - Testing simple functions, no hard dependencies](./src/services/math/)
 - [Logger - jest.spyOn](./src/services/logger/)
-- []()
+- [App - Child Component Mocking](./src/app/)
 
 ## Todo
 

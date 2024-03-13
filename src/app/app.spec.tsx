@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react';
 import App from './app';
-import exp from 'constants';
 
 jest.mock('./fragments/todo', () => {
   return {
