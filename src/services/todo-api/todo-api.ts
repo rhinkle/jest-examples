@@ -31,6 +31,7 @@ async function getFakeTodos(): Promise<Todo[]> {
       id: '3',
     },
   ];
+
   return Promise.resolve(defaultTodos);
 }
 

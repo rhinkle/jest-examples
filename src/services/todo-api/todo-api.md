@@ -1,9 +1,3 @@
 # todo-api Testing
 
-Todo api example uses an hard external dependency, axios in this case. you cant control the response of server making testing harder.
-
-## Testing Strategies
-
-[Social Testing]
-
-[Solidarity Testing]
+The Todo API example uses a hard external dependency, Axios, in this case. It is a good example of how to test a service with a hard dependency. This is an example of Solidarity Testing.

@@ -8,7 +8,7 @@ export function App() {
   return (
     <div>
       <Header />
-      <div className="container mx-auto mt-4 border-2 border-solid border-gray-700 rounded-md">
+      <div className="container mx-auto mt-4 rounded-md border-2 border-solid border-gray-700">
         <TodoSection />
       </div>
     </div>
