@@ -28,7 +28,7 @@ export function TodoList(props: TodoListProps) {
   };
 
   const handleTodoClick = (
-    event: SyntheticEvent<HTMLLIElement, MouseEvent>
+    event: SyntheticEvent<HTMLLIElement, MouseEvent>,
   ) => {
     if (props.onTodoClick) {
       props.onTodoClick(event.currentTarget.id);
