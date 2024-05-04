@@ -1,5 +1,10 @@
 # Jest Examples
 
+## Quick Start
+
+- This uses `pnpm` as the package manager. You can install it by running `npm install -g pnpm`. To install the dependencies run `pnpm install`.
+- NX Standalone is uses to manage this repo. Its a bit overkill but i wanted to try it out. [NX Link](https://nx.dev)
+
 ## Description
 
 This repository contains examples of how to use Jest for testing Typescript React code. This is used as a reference for how to test different components and features in a React application.
@@ -18,6 +23,17 @@ This repository contains examples of how to use Jest for testing Typescript Reac
 - Async Testing
 - React UseEffect
 - ~~React Component - Header~~
+- ~~Simple Jest - Math~~
+- ~~Add pre-commit hooks~~
+- ~~React Mock Logger~~
+- ~~Axios request mocking~~
+
+# Done:
+
+- [Test - React Component Mocking](src/app/readme.md)
+- [Test - Simple TS Jest - Math](src/services/math/readme.md)
+- [Test - React Mock Logger](src/services/logger/readme.md)
+- [Test - Axios request mocking](src/services/todo/readme.md)
 
 ## Info & Thoughts on Jest
 

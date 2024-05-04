@@ -1,0 +1,35 @@
+# Research Topics
+
+- Statefull vs Stateless react components. When to use each.
+  - state management vs hooks?
+  - React Query vs global state management?
+  - React Context?
+- VITest vs Jest? is there a difference? What are better in what cases?
+- TS: play with types and generics. What are the best practices?
+- Network & TS: Thoughts on how to validate types from network requests.
+  - Should you validate the data from the network? Unknonw to a specific type?
+- TS reducers, map and filter functions. How to use them effectively?
+- Hooks, what are they how do they work?
+- Survey for event based archtecture.
+  - What are the diff types?
+  - What are the best practices?
+  - When would I use them?
+  - When would I not want to use them?
+- Microservices, what are they?
+  - What are the best practices?
+  - When would I use them?
+  - When would I not want to use them?
+- Microfrontends: What are they?
+  - What are the best practices?
+  - When would I use them?
+  - When would I not want to use them?
+  - What example are there?
+- Snapshot testing where should we usei it?
+  - Where the datas structure and values is not changing.
+    - Format functions
+- Ideas on schema validation.
+  - How to validate data from the network?
+  - How to validate data from the user?
+- Kata: Titles WKLS subscription generator
+  - how to do real-time updates with a subscription?
+  - what is best, with react or something else?
